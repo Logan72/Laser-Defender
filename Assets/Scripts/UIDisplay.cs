@@ -14,7 +14,7 @@ public class UIDisplay : MonoBehaviour
 
     void Awake()
     {
-        scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        scoreKeeper = FindAnyObjectByType<ScoreKeeper>();
     }
     void Start()
     {

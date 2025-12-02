@@ -11,8 +11,8 @@ public class PlayerHealth : Health
 
     protected override void Awake()
     {
-        ui = FindObjectOfType<UIDisplay>();
-        audioPlayer = FindObjectOfType<AudioPlayer>();
+        ui = FindAnyObjectByType<UIDisplay>();
+        audioPlayer = FindAnyObjectByType<AudioPlayer>();
         ui.UpdateHealth(health);
         cameraShaking = Camera.main.GetComponent<CameraShaking>();
     }

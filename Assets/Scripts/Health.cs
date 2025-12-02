@@ -13,8 +13,8 @@ public class Health : MonoBehaviour
 
     protected virtual void Awake()
     {        
-        ui = FindObjectOfType<UIDisplay>();
-        audioPlayer = FindObjectOfType<AudioPlayer>();
+        ui = FindAnyObjectByType<UIDisplay>();
+        audioPlayer = FindAnyObjectByType<AudioPlayer>();
     }
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {

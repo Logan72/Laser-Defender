@@ -11,7 +11,7 @@ public class PathFinder : MonoBehaviour
 
     void Start()
     {
-        wave = FindObjectOfType<EnemySpawner>().CurrentWave;
+        wave = FindAnyObjectByType<EnemySpawner>().CurrentWave;
         waypoints = wave.Waypoints;
     }
     void Update()

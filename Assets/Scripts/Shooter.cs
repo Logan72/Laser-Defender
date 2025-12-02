@@ -20,7 +20,7 @@ public class Shooter : MonoBehaviour
 
     void Awake()
     {
-        audioPlayer = FindObjectOfType<AudioPlayer>();
+        audioPlayer = FindAnyObjectByType<AudioPlayer>();
     }
     void Start()
     {
