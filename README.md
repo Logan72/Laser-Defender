@@ -1,1 +1,1 @@
-This is a simple game.
+This is a simple 2D game.
